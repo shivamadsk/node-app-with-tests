@@ -5,11 +5,11 @@ pipeline {
         }
     }
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/shivamadsk/node-app-with-tests.git'
-            }
-        }
+        // stage('Checkout') {
+        //     steps {
+        //         git 'https://github.com/shivamadsk/node-app-with-tests.git'
+        //     }
+        // }
         stage ('Install Dependencies') {
             steps {
                 sh 'npm install'
